@@ -1,0 +1,11 @@
+[package]
+name = "driver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror = "1.0.57"
+serialport5 = "5.0.2"
+heapless = "0.7.17"
+
+protocol = { path = "../protocol" }

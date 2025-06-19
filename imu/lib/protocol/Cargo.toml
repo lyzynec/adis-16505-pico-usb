@@ -1,0 +1,15 @@
+[package]
+name = "protocol"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = []
+std = ["postcard/use-std", "serde/default"]
+
+[dependencies]
+heapless = { version = "0.7.0" }
+postcard = { version = "1.0.8", features = ["default"] }
+serde = { version = "1.0.196", default-features = false, features = ["derive"] }
+
+adis = { path = "../adis", features = ["serde"] }

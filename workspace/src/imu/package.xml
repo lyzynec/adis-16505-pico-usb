@@ -1,0 +1,16 @@
+<package format="3">
+  <name>imu</name>
+  <version>0.0.0</version>
+  <description>ADIS16505 Publisher Node</description>
+  <maintainer email="krizmat3@fel.cvut.cz">krizmat3</maintainer>
+  <license>TODO</license>
+
+  <depend>rclrs</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <export>
+    <build_type>ament_cargo</build_type>
+  </export>
+</package>

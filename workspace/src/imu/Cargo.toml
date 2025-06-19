@@ -1,0 +1,11 @@
+[package]
+name = "imu"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rclrs = "*"
+std_msgs = "*"
+sensor_msgs = "*"
+
+driver = { path = "../../../imu/lib/driver" }

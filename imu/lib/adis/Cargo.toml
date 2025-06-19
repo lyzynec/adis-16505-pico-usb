@@ -1,0 +1,16 @@
+[package]
+name = "adis"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = []
+serde = ["dep:serde"]
+cburst = ["c-types", "serde?/std"]
+
+[dependencies]
+c-types = { version = "3.0.1", optional = true }
+duplicate = "1.0.0"
+serde = { version = "1.0.196", default-features = false, features = ["derive"], optional = true }
+uom = { version = "0.35.0", default-features = false, features = ["f64", "si", "use_serde"] }
+
